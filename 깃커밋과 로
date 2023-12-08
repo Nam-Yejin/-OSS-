@@ -1,0 +1,53 @@
+◎ 깃 3 영역
+  •작업 영역
+    working directory(folder), working tree
+    탐색기 상의 폴더 하부
+  •스테이징 영역
+    staging area, index
+    저장소의 .git 폴더의 파일 index
+  •깃 저장소(git repository)
+    저장소
+      저장소의 .git 폴더의 여러 정보
+
+◎ 파일 생성 후 add, commit 수행
+  $ git add
+    •파일을 작업 영역 => 스테이징 영역로 이동(복사)
+  $ git commit
+    •스테이징 영역에 준비된 파일 => 깃 저장소로 이동(복사)
+
+◎깃 상태확인
+  •명령 git status
+    깃 저장소의 현재 상태를 확인하려면 git status 명령을 사용
+  •주요 명령
+    $ git status [--long] 현재의 상태 표시, 기본 값(default value)
+    $ git status [--short | -s] 현재의 상태를 간단히 표시
+    $ git config --global --edit 도움말 보기
+
+◎처음 만들어진 파일
+  •추적되지 않는 파일(untracked file)
+    ‘깃에 관리되지 않는 파일’의 의미
+
+◎Add와 unstaging
+  $ git rm --cached <file>
+    인덱스인 Changes to be committed(커밋할 수정 내용)에서 삭제(이전 내용으로 수정)
+
+◎커밋(commit)
+  •버전 관리를 위해 현재 스테이지 영역의 내용에 대해 스냅샷(snap shot)을 찍는 명령
+  주요 명령
+    즉 커밋으로 버전 관리를 위해 인덱스에 추가된 파일들의 현재 상태를 저장
+  •커밋에는 이력을 관리하기 위해 반드시 커밋 메시지의 저장이 필요
+    $ git commit  : 커밋 메시지를 입력할 기본 편집기 실행됨
+    $ git commit -m ‘message'  : 커밋 메시지를 직접 입력 [-m | --message]
+    $ git commit -a -m ‘message'  : 추가와 커밋을 함께 실행 [-a | --all]
+    $ git commit -am ‘message'
+
+◎Untracked file
+ •추가하고 한 이후에 커밋
+   깃에서 추가와 커밋을 동시에 실행 불가능
+
+
+
+
+
+
+
