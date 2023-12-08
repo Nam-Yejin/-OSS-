@@ -1,11 +1,19 @@
 git init basic
->basic 폴더 생성
+>basic 저장소 생성(폴더생성)
 
+폴더이동
+cd basic -basic폴더로 이동
+cd .. -부모폴더로 이동
+
+파일확인(폴더안의 파일들 목록확인)
+ls
 
 파일생성
 echo aaa>hello.txt
 
+hello.txt 파일 확인(문구확인)
 cat hello.txt
+
 git status [--long]
 
 파일추가
