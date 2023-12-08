@@ -48,6 +48,24 @@
 
 
 
+◎커밋 로그 이력 보기
+  $ git log
+   •주요 명령
+     $ git log 로그 이력 정보를 표시
+     $ git log --oneline 로그 이력을 한 줄로 표시
+     $ git log [--patch | -p] 로그 이력과 함께 파일의 변화(이전 커밋과의 차이)를 표시
 
 
+◎옵션 --oneline
+  한 줄로 간략히 표시
+    커밋 ID 일곱자리, (마지막 커밋 HEAD -> 브랜치이름), 커밋 메시지 제목
+    커밋 ID는 40개 16진수 중에서 맨 앞 7개만 표시
 
+◎커밋 정보 git show
+  특정한 커밋 정보를 확인하려면 명령 git show를 사용
+    •주요 명령
+     $ git show 마지막 커밋(HEAD)의 커밋 정보 표시
+     $ git show --oneline 커밋 로그 한 줄과 파일 차이 표시
+     $ git show -s 파일 차이는 표시되지 않음  +두 옵션을 함께 사용: --oneline –s한 줄로 표시, 파일차이는 표시되지 않음
+     $ git show [HEAD] 지정한 HEAD의 커밋 정보 표시
+     $ git show [commitID] 지정한 commitID의 커밋 정보 표시
