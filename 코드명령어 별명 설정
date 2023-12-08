@@ -1,0 +1,6 @@
+$ git config --global alias.lg1 'log --oneline'
+$ git config --global alias.lg1ag 'log --oneline --all --graph'
+$ git config --global alias.ss 'status -s'
+$ git config --global alias.s status
+
+$ git config --global alias.별명 '코드'   순으로 적으면 된다. 코드가 단일이면 싱글코트( ' )를 안써도 되지만 여러단어라면 싱글코트( ' )를 반드시 사용해야한다. 
