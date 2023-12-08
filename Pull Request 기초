@@ -1,0 +1,13 @@
+지역 저장소(local repo) 관점
+ -Push
+  원격 저장소로 올리기
+
+ -Pull
+  지역 저장소로 내리기
+
+원격 서버(remote)가 2개
+ -Upstream
+  오픈소스 또는 타인의 저장소
+ -Origin
+  Upstream을 네 계정으로 Fork된 자신의 저장소
+
