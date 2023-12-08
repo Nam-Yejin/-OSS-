@@ -11,3 +11,27 @@
  -Origin
   Upstream을 네 계정으로 Fork된 자신의 저장소
 
+Pull request(PR)
+ －수정 권한이 없는 타인의 오픈소스(저장소)에 저장소 수정 등의 기여 요청을 하는 알림
+   • 프로젝트 수행 시 개발자로서 코드 수정을 알림
+ －저장소 소유자(또는 관리자) 관점에서 “수정 내용의 pull 요청”하는 작업
+   • 기여자의 수정 내용을 가져와(pull) 소유자의 저장소에 합병(merge)하는 작업을 요청
+ －PR 작성자
+   • 개발자
+ － developer
+ －제안된 PR 검토와 병합
+   • 관리자
+ － Code owner
+
+pull 오픈소스 소프트웨어를 위한 깃과 깃허브 request 처리 과정
+ • 기여자 관점
+  －New Branch
+  －Commit
+  －Pull request
+  －Discussion
+  －Commit
+ • 관리자 관점
+  －Request review
+  －discussion
+  －Accept PR
+  －Merge
