@@ -1,0 +1,70 @@
+git init basic
+>basic 폴더 생성
+
+
+파일생성
+echo aaa>hello.txt
+
+cat hello.txt
+git status [--long]
+
+파일추가
+git add hello.txt  -스테이징영역에 hello.txt추가
+git status [--short | -s]
+
+첫번째 커밋
+git commit -m A  -깃저장소에 스테이징영역의 파일 추가
+git status -s   -아무것도 출력되지 않음
+git status
+
+
+git log  -커밋한 이력을 출력
+commit 28800c82c539200ca97c0b29dd0618cf3ed4978e (HEAD -> main) - head>main branch이름
+Author: YeJin <nam234400@gmail.com>  -유저정보
+Date:   Wed Sep 27 14:43:54 2023 +0900 -작업 날짜
+ A  -커밋메시지
+
+git log --oneline -한줄로 표시
+git log [--patch | -p]  -
+
+
+
+파일수정
+$ echo bbb>>hello.txt  -bbb를 hello.txt 파일에 추가로 적기 >>를 2개 적어줘야함 
+
+$ cat hello.txt
+aaa
+bbb
+
+git status  -s
+
+두번째 커밋
+git commit -am B
+
+
+git status
+On branch main
+nothing to commit, working tree clean
+>가장 안정적인 상태
+
+$ git log
+commit 9426c2ea62248edecabd9e88cde1c85dc9913bbb (HEAD -> main)
+Author: YeJin <nam234400@gmail.com>
+Date:   Wed Sep 27 15:05:10 2023 +0900
+
+    B
+
+commit 28800c82c539200ca97c0b29dd0618cf3ed4978e
+Author: YeJin <nam234400@gmail.com>
+Date:   Wed Sep 27 14:43:54 2023 +0900
+
+    A
+>가장 최근 커밋부터 표시
+
+$ git log --oneline
+9426c2e (HEAD -> main) B  -2줄
+28800c8 A                      -1줄
+
+
+
+$ git log --patch
